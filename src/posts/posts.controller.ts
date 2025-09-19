@@ -1,4 +1,4 @@
-import { Controller, Delete, Get, Post } from '@nestjs/common';
+import { Controller, Delete, Get, Ip, Post } from '@nestjs/common';
 
 @Controller('posts')
 export class PostsController {
@@ -15,7 +15,8 @@ export class PostsController {
     return 'Get the post BY Id';
   }
   @Delete('/:id')
-  public deleteUserById() {
+  public deleteUserById(@Ip() ip: any) {
+    console.log(ip);
     return 'Delete the post By Id';
   }
 }

@@ -1,0 +1,17 @@
+
+GET http://localhost:3003/users
+
+POST http://localhost:3003/users
+Content-Type: application/json
+{
+  "email": "s@gnail.com",
+  "password": "Strong222222@",
+  "firstName": "John",
+  "lastName": "Doe"
+}
+
+PUT http://localhost:3003/users/2
+GET http://localhost:3003/users/3
+
+
+DELETE   http://localhost:3003/users/2

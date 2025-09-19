@@ -1,9 +1,11 @@
 
-GET http://localhost:3000/users
+GET http://localhost:3000/posts
 
-POST http://localhost:3000/users
+POST http://localhost:3000/posts
 
-PUT http://localhost:3000/users/2
+PUT http://localhost:3003/posts/2
 
 
-DELETE   http://localhost:3000/users/2
+DELETE   http://localhost:3003/posts/2
+
+
